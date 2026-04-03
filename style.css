@@ -125,8 +125,26 @@ img {
 }
 
 .main-nav a {
+  position: relative;
   font-weight: 600;
   color: var(--muted);
+}
+
+.main-nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -0.4rem;
+  width: 100%;
+  height: 2px;
+  transform: scaleX(0);
+  transform-origin: left;
+  background: var(--accent);
+  transition: transform 160ms ease;
+}
+
+.main-nav a:hover::after {
+  transform: scaleX(1);
 }
 
 .nav-toggle {
@@ -248,6 +266,32 @@ img {
   margin-top: 2rem;
 }
 
+.hero-metrics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin-top: 1.4rem;
+}
+
+.metric,
+.hero-trust span {
+  display: inline-grid;
+  gap: 0.15rem;
+  padding: 0.8rem 0.95rem;
+  border: 1px solid rgba(86, 50, 29, 0.1);
+  border-radius: 18px;
+  background: rgba(255, 248, 240, 0.68);
+}
+
+.metric strong {
+  font-size: 0.95rem;
+}
+
+.metric span {
+  color: var(--muted);
+  font-size: 0.86rem;
+}
+
 .button {
   display: inline-flex;
   align-items: center;
@@ -261,6 +305,18 @@ img {
 
 .button:hover {
   transform: translateY(-2px);
+}
+
+.button:focus-visible,
+.filter-chip:focus-visible,
+.carousel-control:focus-visible,
+.carousel-dot:focus-visible,
+.faq-item summary:focus-visible,
+.form-row input:focus-visible,
+.form-row select:focus-visible,
+.form-row textarea:focus-visible {
+  outline: 2px solid rgba(191, 91, 43, 0.35);
+  outline-offset: 3px;
 }
 
 .button-primary {
@@ -311,6 +367,13 @@ img {
   font-weight: 700;
 }
 
+.hero-trust {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  margin-top: 1rem;
+}
+
 .intro-strip,
 .section {
   padding: 4.5rem 0;
@@ -348,6 +411,27 @@ img {
 .feature-card,
 .contact-card {
   padding: 1.6rem;
+}
+
+.service-card,
+.review-card,
+.gallery-card,
+.map-copy,
+.contact-card,
+.order-copy,
+.order-form,
+.faq-item {
+  transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+}
+
+.service-card:hover,
+.review-card:hover,
+.gallery-card:hover,
+.contact-card:hover,
+.map-copy:hover {
+  transform: translateY(-4px);
+  border-color: rgba(191, 91, 43, 0.2);
+  box-shadow: 0 26px 70px rgba(67, 34, 14, 0.18);
 }
 
 .service-icon {
@@ -395,6 +479,14 @@ img {
 
 .feature-media img {
   aspect-ratio: 4 / 3;
+  transition: transform 400ms ease;
+}
+
+.feature-media:hover img,
+.gallery-card:hover img,
+.about-figure:hover img,
+.hero-image-frame:hover img {
+  transform: scale(1.03);
 }
 
 .feature-copy {
@@ -645,6 +737,21 @@ img {
   cursor: pointer;
   font-weight: 800;
   list-style: none;
+  position: relative;
+  padding-right: 1.5rem;
+}
+
+.faq-item summary::after {
+  content: "+";
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: var(--accent);
+  font-size: 1.2rem;
+}
+
+.faq-item[open] summary::after {
+  content: "−";
 }
 
 .faq-item summary::-webkit-details-marker {
@@ -745,6 +852,15 @@ img {
   background: rgba(255, 248, 240, 0.94);
   font: inherit;
   color: var(--ink);
+  transition: border-color 160ms ease, box-shadow 160ms ease, background-color 160ms ease;
+}
+
+.form-row input:focus,
+.form-row select:focus,
+.form-row textarea:focus {
+  border-color: rgba(191, 91, 43, 0.5);
+  box-shadow: 0 0 0 4px rgba(191, 91, 43, 0.08);
+  background: #fffdf9;
 }
 
 .form-row-full,
@@ -866,6 +982,10 @@ img {
   .hero-actions {
     flex-direction: column;
     align-items: stretch;
+  }
+
+  .hero-metrics {
+    flex-direction: column;
   }
 
   .gallery-card-large img {
