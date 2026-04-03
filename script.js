@@ -72,13 +72,19 @@ if (filterGroup && galleryCards.length) {
 }
 
 const whatsappForm = document.querySelector("[data-whatsapp-form]");
+const whatsappNumberNode = document.querySelector("[data-whatsapp-number]");
+const whatsappLink = document.querySelector("[data-whatsapp-link]");
+
+if (whatsappNumberNode && whatsappLink) {
+  const phoneNumber = whatsappNumberNode.textContent.trim();
+  whatsappLink.href = `https://wa.me/${phoneNumber}`;
+}
 
 if (whatsappForm) {
   whatsappForm.addEventListener("submit", (event) => {
     event.preventDefault();
 
-    const numberNode = document.querySelector("[data-whatsapp-number]");
-    const phoneNumber = numberNode?.textContent?.trim() || "";
+    const phoneNumber = whatsappNumberNode?.textContent?.trim() || "";
     const formData = new FormData(whatsappForm);
 
     const message = [
