@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Boulangerie / Patisserie LAAFI DE TIBGA</title>
+  <meta
+    name="description"
+    content="Boulangerie / Patisserie LAAFI DE TIBGA : pains artisanaux, viennoiseries, pâtisseries et prestations gourmandes pour particuliers et événements."
+  >
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#accueil">
+        <span class="brand-kicker">Boulangerie / Patisserie</span>
+        <span class="brand-name">LAAFI DE TIBGA</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav">
+        <span class="sr-only">Ouvrir le menu</span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="main-nav" id="main-nav">
+        <a href="#prestations">Prestations</a>
+        <a href="#moments">Moments</a>
+        <a href="#galerie">Galerie</a>
+        <a href="#specialites">Spécialités</a>
+        <a href="#apropos">À propos</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="accueil">
+    <section class="hero">
+      <div class="hero-overlay"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Saveurs artisanales et accueil chaleureux</p>
+          <h1>Des créations boulangères et pâtissières pensées pour chaque moment de vie.</h1>
+          <p class="hero-text">
+            LAAFI DE TIBGA prépare chaque jour des pains, des viennoiseries et des pâtisseries
+            généreuses, pour les familles, les entreprises et les événements.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#contact">Commander</a>
+            <a class="button button-secondary" href="#prestations">Découvrir nos offres</a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <figure class="hero-image-frame">
+            <img
+              src="assets/photos/hero-bakery.jpg"
+              alt="Vitrine de boulangerie remplie de pains et pâtisseries"
+            >
+          </figure>
+          <aside class="hero-card">
+            <p class="card-label">Nos engagements</p>
+            <ul>
+              <li>Pain pétri avec soin et cuisson quotidienne</li>
+              <li>Gâteaux d'anniversaire et pâtisseries sur commande</li>
+              <li>Buffets sucrés et salés pour cérémonies et entreprises</li>
+            </ul>
+            <div class="hero-badge">Frais chaque jour</div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="intro-strip">
+      <div class="container intro-grid">
+        <div>
+          <p class="section-tag">Maison artisanale</p>
+          <h2>Une boulangerie pâtisserie au service du goût et du partage.</h2>
+        </div>
+        <p>
+          Nous proposons une offre complète : production quotidienne, commandes personnalisées,
+          accompagnement pour fêtes, mariages, baptêmes, réunions et pauses gourmandes en entreprise.
+        </p>
+      </div>
+    </section>
+
+    <section class="section carousel-section" id="moments">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-tag">Moments gourmands</p>
+          <h2>Un carrousel visuel pour présenter vos produits phares et l’ambiance de la maison.</h2>
+        </div>
+
+        <div class="carousel" data-carousel>
+          <button class="carousel-control carousel-control-prev" type="button" aria-label="Image précédente" data-carousel-prev>
+            ‹
+          </button>
+          <div class="carousel-viewport">
+            <div class="carousel-track" data-carousel-track>
+              <article class="carousel-slide is-active">
+                <img src="assets/photos/hero-bakery.jpg" alt="Vitrine complète de boulangerie et pâtisserie">
+                <div class="carousel-caption">
+                  <p class="feature-kicker">La vitrine</p>
+                  <h3>Une présentation qui donne confiance dès le premier regard.</h3>
+                </div>
+              </article>
+              <article class="carousel-slide">
+                <img src="assets/photos/croissants.jpg" alt="Croissants et viennoiseries dorés">
+                <div class="carousel-caption">
+                  <p class="feature-kicker">Le matin</p>
+                  <h3>Viennoiseries croustillantes prêtes pour le petit déjeuner.</h3>
+                </div>
+              </article>
+              <article class="carousel-slide">
+                <img src="assets/photos/celebration-cake.jpg" alt="Gâteau de fête pour commande spéciale">
+                <div class="carousel-caption">
+                  <p class="feature-kicker">Événements</p>
+                  <h3>Gâteaux sur mesure pour anniversaires, fêtes et cérémonies.</h3>
+                </div>
+              </article>
+              <article class="carousel-slide">
+                <img src="assets/photos/bread-board.jpg" alt="Pain artisanal sur planche en bois">
+                <div class="carousel-caption">
+                  <p class="feature-kicker">Le quotidien</p>
+                  <h3>Pains artisanaux, formats familiaux et recettes du jour.</h3>
+                </div>
+              </article>
+            </div>
+          </div>
+          <button class="carousel-control carousel-control-next" type="button" aria-label="Image suivante" data-carousel-next>
+            ›
+          </button>
+          <div class="carousel-dots" data-carousel-dots>
+            <button class="carousel-dot is-active" type="button" aria-label="Aller à l'image 1"></button>
+            <button class="carousel-dot" type="button" aria-label="Aller à l'image 2"></button>
+            <button class="carousel-dot" type="button" aria-label="Aller à l'image 3"></button>
+            <button class="carousel-dot" type="button" aria-label="Aller à l'image 4"></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="prestations">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-tag">Prestations</p>
+          <h2>Des services adaptés aux besoins du quotidien et des grandes occasions.</h2>
+        </div>
+
+        <div class="cards three-up">
+          <article class="service-card">
+            <div class="service-icon">01</div>
+            <h3>Boulangerie artisanale</h3>
+            <p>Pains traditionnels, baguettes, brioches et petits pains préparés avec régularité et exigence.</p>
+          </article>
+          <article class="service-card">
+            <div class="service-icon">02</div>
+            <h3>Pâtisserie sur mesure</h3>
+            <p>Tartes, entremets, gâteaux d'anniversaire et pièces spéciales selon vos envies et votre budget.</p>
+          </article>
+          <article class="service-card">
+            <div class="service-icon">03</div>
+            <h3>Prestations événementielles</h3>
+            <p>Plateaux, mignardises, viennoiseries et desserts pour mariages, réceptions et rencontres professionnelles.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section warm-section" id="specialites">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-tag">Spécialités</p>
+          <h2>Une sélection gourmande pour séduire tous les palais.</h2>
+        </div>
+
+        <div class="feature-grid">
+          <article class="feature-card feature-large feature-media">
+            <img
+              src="assets/photos/croissants.jpg"
+              alt="Croissants dorés fraîchement préparés"
+            >
+            <div class="feature-copy">
+              <p class="feature-kicker">Le matin</p>
+              <h3>Viennoiseries dorées</h3>
+              <p>Croissants, pains au chocolat, brioches moelleuses et douceurs prêtes dès les premières heures.</p>
+            </div>
+          </article>
+          <article class="feature-card">
+            <p class="feature-kicker">Les classiques</p>
+            <h3>Pains du jour</h3>
+            <p>Baguettes, boules, pains sandwich et formats familiaux pour accompagner chaque repas.</p>
+          </article>
+          <article class="feature-card">
+            <p class="feature-kicker">Les fêtes</p>
+            <h3>Gâteaux personnalisés</h3>
+            <p>Décors soignés, formats variés et parfums au choix pour célébrer les moments importants.</p>
+          </article>
+          <article class="feature-card">
+            <p class="feature-kicker">Les réceptions</p>
+            <h3>Buffets et assortiments</h3>
+            <p>Mini-pâtisseries, collations et compositions gourmandes pour vos invités et collaborateurs.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section gallery-section">
+      <div class="container gallery-grid">
+        <figure class="gallery-card gallery-card-large">
+          <img
+            src="assets/photos/celebration-cake.jpg"
+            alt="Gâteau de célébration personnalisé"
+          >
+          <figcaption>Créations festives pour anniversaires, mariages et réceptions.</figcaption>
+        </figure>
+        <div class="gallery-copy">
+          <p class="section-tag">Ambiance</p>
+          <h2>Un univers visuel plus gourmand, plus vivant et plus rassurant.</h2>
+          <p>
+            Les images renforcent la confiance, donnent envie de commander et aident les visiteurs à
+            comprendre immédiatement la qualité de vos prestations.
+          </p>
+          <div class="gallery-points">
+            <span>Présentations soignées</span>
+            <span>Couleurs chaleureuses</span>
+            <span>Style artisanal premium</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section showcase-section" id="galerie">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-tag">Notre vitrine</p>
+          <h2>Une galerie filtrable pour présenter clairement chaque famille de produits.</h2>
+        </div>
+
+        <div class="gallery-toolbar" data-filter-group>
+          <button class="filter-chip is-active" type="button" data-filter="all">Tout voir</button>
+          <button class="filter-chip" type="button" data-filter="patisserie">Pâtisserie</button>
+          <button class="filter-chip" type="button" data-filter="boulangerie">Boulangerie</button>
+          <button class="filter-chip" type="button" data-filter="evenement">Événement</button>
+        </div>
+
+        <div class="showcase-grid" data-gallery-grid>
+          <figure class="gallery-card" data-category="patisserie">
+            <img src="assets/photos/pastry-display.jpg" alt="Assortiment de pâtisseries en vitrine">
+            <figcaption>Pâtisseries présentées avec soin pour la vente et les commandes.</figcaption>
+          </figure>
+          <figure class="gallery-card" data-category="boulangerie">
+            <img src="assets/photos/bread-board.jpg" alt="Pain artisanal présenté sur planche">
+            <figcaption>Pains artisanaux et recettes du quotidien préparés avec régularité.</figcaption>
+          </figure>
+          <figure class="gallery-card" data-category="boulangerie">
+            <img src="assets/photos/bakery-counter.jpg" alt="Comptoir de boulangerie avec pains et viennoiseries">
+            <figcaption>Une offre visible, généreuse et rassurante dès l’arrivée des clients.</figcaption>
+          </figure>
+          <figure class="gallery-card" data-category="evenement">
+            <img src="assets/photos/celebration-cake.jpg" alt="Gâteau de célébration pour événement">
+            <figcaption>Créations festives pour anniversaires, mariages et événements spéciaux.</figcaption>
+          </figure>
+          <figure class="gallery-card" data-category="patisserie">
+            <img src="assets/photos/croissants.jpg" alt="Croissants dorés en présentation">
+            <figcaption>Viennoiseries et douceurs du matin pour séduire dès l’ouverture.</figcaption>
+          </figure>
+          <figure class="gallery-card" data-category="boulangerie">
+            <img src="assets/photos/hero-bakery.jpg" alt="Vitrine complète de pains et pâtisseries">
+            <figcaption>Un assortiment généreux pour la boutique, la commande et les buffets.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section split-section" id="apropos">
+      <div class="container split-grid">
+        <div>
+          <p class="section-tag">À propos</p>
+          <h2>LAAFI DE TIBGA valorise le travail artisanal et la proximité avec sa clientèle.</h2>
+        </div>
+        <div class="about-panel">
+          <div class="text-stack">
+            <p>
+              Notre maison met l'accent sur la fraîcheur, la régularité et l'écoute. Chaque commande
+              est traitée avec attention afin de proposer une prestation fiable, généreuse et soignée.
+            </p>
+            <p>
+              Que vous cherchiez du pain pour le quotidien ou une table gourmande pour un événement,
+              nous concevons des solutions simples, élégantes et savoureuses.
+            </p>
+          </div>
+          <figure class="about-figure">
+            <img
+              src="assets/photos/bakery-counter.jpg"
+              alt="Comptoir de boulangerie artisanale avec pains et viennoiseries"
+            >
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section cta-section">
+      <div class="container cta-box">
+        <div>
+          <p class="section-tag">Commande & devis</p>
+          <h2>Parlez-nous de votre besoin et recevez une proposition adaptée.</h2>
+        </div>
+        <a class="button button-primary" href="#contact">Nous contacter</a>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="container contact-grid">
+        <div>
+          <p class="section-tag">Contact</p>
+          <h2>Préparez votre prochaine commande avec LAAFI DE TIBGA.</h2>
+          <p>
+            Remplacez ces informations par vos coordonnées réelles pour publier le site :
+          </p>
+        </div>
+
+        <div class="contact-card">
+          <p><strong>Téléphone :</strong> +226 00 00 00 00</p>
+          <p><strong>Email :</strong> contact@laafidetibga.com</p>
+          <p><strong>Adresse :</strong> Tibga, Burkina Faso</p>
+          <p><strong>Horaires :</strong> Lundi - Samedi, 6h00 - 20h00</p>
+        </div>
+      </div>
+
+      <div class="container order-grid">
+        <div class="order-copy">
+          <p class="section-tag">Commande rapide</p>
+          <h2>Un formulaire simple qui prépare automatiquement le message WhatsApp.</h2>
+          <p>
+            Le client choisit son besoin, renseigne les détails, puis envoie la demande en un clic.
+            Remplacez le numéro WhatsApp ci-dessous par votre numéro réel.
+          </p>
+          <div class="order-note">
+            Numéro WhatsApp actuel : <strong data-whatsapp-number>22600000000</strong>
+          </div>
+        </div>
+
+        <form class="order-form" data-whatsapp-form>
+          <div class="form-row">
+            <label for="nom">Nom</label>
+            <input id="nom" name="nom" type="text" placeholder="Votre nom" required>
+          </div>
+          <div class="form-row">
+            <label for="telephone">Téléphone</label>
+            <input id="telephone" name="telephone" type="tel" placeholder="+226 ..." required>
+          </div>
+          <div class="form-row">
+            <label for="prestation">Type de demande</label>
+            <select id="prestation" name="prestation" required>
+              <option value="">Choisir</option>
+              <option>Boulangerie quotidienne</option>
+              <option>Pâtisserie sur mesure</option>
+              <option>Commande événementielle</option>
+              <option>Demande de devis</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <label for="date">Date souhaitée</label>
+            <input id="date" name="date" type="date">
+          </div>
+          <div class="form-row form-row-full">
+            <label for="details">Détails de la commande</label>
+            <textarea id="details" name="details" rows="5" placeholder="Exemple : 2 gâteaux anniversaire, 50 mini-viennoiseries, livraison à 15h."></textarea>
+          </div>
+          <div class="form-actions">
+            <button class="button button-primary" type="submit">Commander via WhatsApp</button>
+            <p class="form-hint">Le message s’ouvrira dans WhatsApp avec les informations remplies.</p>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>Boulangerie / Patisserie LAAFI DE TIBGA</p>
+      <p>Prestations artisanales en boulangerie et pâtisserie.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
